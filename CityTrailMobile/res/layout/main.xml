@@ -1,0 +1,194 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="@dimen/margin" 
+    android:textColor="@color/textbody"
+    android:background="@color/screen_background">
+    <!-- Map -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:id = "@+id/container" >
+          <ImageView
+              android:layout_width="match_parent"
+              android:layout_height="350dp"
+              android:id="@+id/mapitaly"
+              android:background="@drawable/mapitaly05"
+              android:layout_alignParentTop="true"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentStart="true" />
+          <!-- animation -->
+
+          <name.bagi.levente.pedometer.AnimationView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />
+
+          <!-- end of animation -->
+     </RelativeLayout>
+     <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+    
+     <!-- end of Map -->
+    <LinearLayout android:id="@+id/row_1"
+        android:orientation="horizontal" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        >
+    
+        <LinearLayout android:id="@+id/box_parent"
+            android:orientation="vertical"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+           
+            android:paddingRight="@dimen/margin"
+            android:textColor="@color/textbody"
+            android:layout_weight="1">
+           
+            <TextView android:id="@+id/parent_name"
+             android:textSize="20sp" 
+             android:textStyle="bold"
+              android:textColor="@color/personnamecolor"
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal" 
+              android:background="@color/display_background" 
+              android:paddingLeft="@dimen/padding" 
+              android:paddingRight="@dimen/padding" 
+              android:paddingTop="@dimen/padding"
+              android:text="Garfield"/>
+            <TextView android:id="@+id/step_value"
+               android:textSize="15sp" 
+                android:textColor="@color/textbody"
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" 
+                android:background="@color/display_background" 
+                android:paddingLeft="@dimen/padding" 
+                android:paddingRight="@dimen/padding" 
+                android:paddingTop="@dimen/padding"
+                android:text=""/>
+           
+             <TextView android:id="@+id/parent_coins"
+                android:gravity="center_horizontal"
+                 android:textColor="@color/textbody"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp" 
+                android:background="@color/display_background" 
+                android:paddingBottom="@dimen/padding"/>
+             
+              <!-- <TextView android:id="@+id/parent_goal"
+                android:gravity="center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/step_count" 
+                 android:textColor="@color/textbody"
+                android:background="@color/display_background" 
+                android:paddingBottom="@dimen/padding"/>-->
+
+        </LinearLayout>
+      
+        <LinearLayout android:id="@+id/box_child"
+            android:orientation="vertical" 
+             android:textColor="@color/textbody"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:paddingRight="@dimen/margin"
+            android:layout_weight="1">
+               
+            
+            
+         <TextView android:id="@+id/child_name"
+             android:textSize="20sp" 
+             android:textStyle="bold"
+              android:textColor="@color/personnamecolor"
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal" 
+              android:background="@color/display_background" 
+              android:paddingLeft="@dimen/padding" 
+              android:paddingRight="@dimen/padding" 
+              android:paddingTop="@dimen/padding"
+              android:text="Odie"/>
+            
+          
+            <TextView android:id="@+id/log_data_text_view"
+                android:gravity="center_horizontal"
+                 android:textColor="@color/textbody"
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:background="@color/display_background" 
+                android:textSize="15sp" 
+                android:paddingLeft="@dimen/padding" 
+                android:paddingRight="@dimen/padding" 
+                android:paddingTop="@dimen/padding"
+                android:text=""/>
+          
+              <TextView android:id="@+id/child_coins"
+                android:gravity="center_horizontal"
+                 android:textColor="@color/textbody"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp" 
+               
+                android:background="@color/display_background" 
+                android:paddingBottom="@dimen/padding"/>
+               
+             <!--  <TextView android:id="@+id/child_goal"
+                android:gravity="center_horizontal"
+                 android:textColor="@color/textbody"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/step_count" 
+              
+                android:background="@color/display_background" 
+                android:paddingBottom="@dimen/padding"/> --> 
+                         
+        </LinearLayout>
+    </LinearLayout>
+<View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+
+
+<!-- Desired pace/speed row -->
+
+     <LinearLayout android:id="@+id/row_4"
+        android:orientation="horizontal" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        >
+           
+        <LinearLayout android:id="@+id/box_child2"
+            android:orientation="horizontal" 
+             android:textColor="@color/textbody"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:paddingRight="@dimen/margin"
+            android:layout_weight="1">
+              
+            <Button android:id="@+id/checkin"
+            android:text="Check-In"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+            
+            
+            <Button android:id="@+id/checkout"
+            android:text="Check-Out"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+         
+         
+        </LinearLayout>
+
+   
+
+
+</LinearLayout>
