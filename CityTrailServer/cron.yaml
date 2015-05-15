@@ -1,0 +1,5 @@
+cron:
+- description: daily step contest
+  url: /task
+  schedule: every day 17:00
+  timezone: US/Pacific
